@@ -1,15 +1,13 @@
-import React from 'react';
-import '../App.css'
+import React from "react";
+import "../App.css";
 
 const Button = ({ icon, text, color, textColor, fWeight }) => {
-    const buttonStyle = {
-        backgroundColor: color,
-        color: textColor,
-        fontWeight: fWeight
-      
-       
-      };
-    
+  const buttonStyle = {
+    backgroundColor: color,
+    color: textColor,
+    fontWeight: fWeight,
+  };
+
   return (
     <div className="button" style={buttonStyle}>
       <span className="icon">{icon}</span>
