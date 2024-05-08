@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './button'; // Assuming Button component file path
-import { FaAngleDown } from "react-icons/fa6";
+
 
 
 
@@ -43,11 +43,9 @@ const JobCard = ({ job }) => {
           <div>{`${minExp} Years`}</div>
         </div>
       ) : (<div style={{height:"59px"}}></div>)}
-      {/* Example usage of Button component */}
-    
-      <FaAngleDown></FaAngleDown>
-      <Button icon={<i className="fas fa-user" />} text="Easy Apply" color="#55EFC4" textColor="black" fWeight="500" />
-      <Button icon={<i className="fas fa-user" />} text="Unlock referral ask" color="#4943DA" textColor="white" />
+      
+      <Button text="Easy Apply" color="#55EFC4" textColor="black" fWeight="500" />
+      <Button text="Unlock referral ask" color="#4943DA" textColor="white" />
     </div>
   );
 };

@@ -1,52 +1,40 @@
 #root {
-  max-width: 1280px;
+max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
- 
 }
+
 .job-card {
-  
   padding: 20px;
   border-radius: 20px;
   position: relative;
- 
   margin-top: 50px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px !important;
 }
 
 @media screen and (min-width: 800px) {
   .job-card {
-    flex: 0 0 calc(30% - 20px); /* Three job cards per row with 20px space between them */
+    flex: 0 0 calc(30% - 20px);
+    /* Three job cards per row with 20px space between them */
   }
 }
 
-@media screen and (max-width: 799px) {
-  .job-card {
-    flex: 0 0 calc(50% - 20px); /* Two job cards per row with 20px space between them */
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .job-card {
-    flex: 0 0 calc(100% - 20px); /* One job card per row with 20px space between them */
-  }
-}
 
 .job-card .company-intro {
   display: flex;
 }
 
-.job-card .posted-time{
+.job-card .posted-time {
   border: 1px solid gray;
   padding: 3px 5px;
   display: inline-block;
   border-radius: 10px;
   font-size: 12px;
   margin-bottom: 20px;
-
 }
 
-.job-card .posted-time :first-child{
+.job-card .posted-time :first-child {
   margin-right: 10px;
 }
 
@@ -69,38 +57,33 @@
   align-items: start;
 }
 
-.job-card .min-experiance div:first-child{
+.job-card .min-experiance div:first-child {
   font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 3px;
-    color: #8b8b8b;
-    margin-top: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  color: #8b8b8b;
+  margin-top: 10px;
 }
 
-.job-card .min-experiance div:last-child{
+.job-card .min-experiance div:last-child {
   font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 5px;
-  
+  font-weight: 400;
+  margin-bottom: 5px;
 }
 
-.job-card .view-job{
-  background:linear-gradient(to bottom, #fffcfc9e 85%, #ffffff 15%) ;
-    position: absolute;
-    top: 325px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: blue;
-    font-size: 16px;
-    text-align: center;
-    padding: 35px 20px;
-    width: 88%;
-
- 
- 
+.job-card .view-job {
+  background: linear-gradient(to bottom, #fffcfc9e 85%, #ffffff 15%);
+  position: absolute;
+  top: 325px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: blue;
+  font-size: 16px;
+  text-align: center;
+  padding: 35px 20px;
+  width: 88%;
 }
-
 
 .button {
   text-align: center;
@@ -109,17 +92,15 @@
   border-radius: 5px;
 }
 
-
-.job-card .salary-info{
+.job-card .salary-info {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.job-card .details{
+.job-card .details {
   max-height: 232px;
   overflow: hidden;
   font-size: 14px;
-  
 }
 
 .listedjob {
@@ -128,79 +109,50 @@
   gap: 20;
   margin: -10px;
   justify-content: space-between;
-  
-  
 }
 
 .margin-right {
-  margin-right: 20px; /* Horizontal space between the first and second card in each row */
+  margin-right: 20px;
+  /* Horizontal space between the first and second card in each row */
 }
 
-
-
-.filtercontainer{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff; /* Optionally add a background color */
-  padding: 10px; /* Adjust padding as needed */
-  z-index: 999; 
+.filtercontainer {
+  background-color: #fff;
+  padding: 10px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+ 
 }
 
-.filtercontainer > *:not(:last-child) {
+.filtercontainer>*:not(:last-child) {
   margin-right: 15px;
 }
 
-
-.custom-dropdown-container {
-  position: relative;
-  width: 100%;
-  border: 1px solid blue;
-  border-radius: 5px;
-  overflow: hidden;
+.search-input {
+  border: 1px solid #b3b3b3;
+  height: 20px;
+  border-radius: 4px;
+  padding: 8px;
 }
 
-.selected-item {
+.loading, .nodata{
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  background-color: #444444;
-  color: white;
-  padding: 8px 12px;
+  font-size: 30px;
+
 }
 
-.clear-icon {
-  cursor: pointer;
-}
 
-.placeholder {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  color: #777777;
+.showerror{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
-
-.custom-dropdown {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.dropdown-icon {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
 
 
